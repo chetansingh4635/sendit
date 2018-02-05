@@ -1,0 +1,41 @@
+
+{
+	"_comment":"Status code for aall success requests",
+	"success":200,
+
+	"_comment":"Status codes for all custom fail request relatd to login",
+	"not_registred":101,
+	"no_email": 102,
+	"no_image_found":103,
+	"already_registered": 104,
+	"record_found": 105,
+	"account_disabled":106,
+
+	"_comment":"Status codes for error related to auth",
+	"invalid_auth":107,
+
+	"_comment":"Status codess for error related to request operations",
+	"travel_incorrect_dates": 108,
+	"record_not_exist": 109,
+	"not_allowed": 110,
+	"can_not_cancel": 111,
+	"can_not_create_intrest": 113,
+	"can_not_link": 114,
+	"disscussion_not_created": 115,
+	"person_not_intrested": 116,
+
+	"_comment":"Status codess for error related to paypal operations",
+	"account_not_verified": 112,
+
+	"has_active_partnerships": 117,
+
+	"allready_not_intrested":118,
+
+	"partnerShip_not_confirmed": 119,
+	"payment_not_recived": 120,
+	"incorrect_airports":121,
+
+	"allready_paid":122,
+	"unable_to_register_creator":123,
+	"unable_to_register_sender":124
+}

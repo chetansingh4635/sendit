@@ -1,0 +1,31 @@
+{
+  "hostAddress": "localhost",
+  "serverPort": 9912,
+  "mongoUrl": "mongodb://localhost:27017/SenditDB",
+  "apiKeys": {
+    "test": "test",
+    "web": "c112f68c22a4b6ff1240e072f64677d155b3d05488bcf5c5194b88aef04ea765"
+  },
+  "tokenExpireIn": "15 days",
+  "verificationExpireIn": "7 days",
+  "files": {
+    "maxSizeBytes": 5242880,
+    "mimeTypes": [
+      "image/png",
+      "image/jpeg",
+      "image/jpg"
+    ]
+  },
+  "paymentGateway": {
+    "username": "rishabh.garg-facilitator_api1.daffodilsw.com",
+    "password": "K83XUQLZNHB6EDFH",
+    "signature": "AFcWxV21C7fd0v3bYYYRCpSSRl31A1Mg5-j6GhJgXKDtarz5pCl-1Csj",
+    "responseLang": "en_US",
+    "defaultCurrency": "USD",
+    "delayedChained": "PAY_PRIMARY",
+    "chained": "PAY"
+  },
+  "algorithm": "aes-256-ctr",
+  "password": "d6F3Efeq",
+  "cutomerType": "cutomer"
+}

@@ -1,0 +1,6 @@
+senditapi:
+   build: .
+   volumes:
+     - ./:/app
+   ports:
+   - "9102:9102"

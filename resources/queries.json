@@ -1,0 +1,24 @@
+{
+    "requestPopulation":[
+    {
+        "path":"createdBy",
+        "select": "firstName lastName profileImage notificationPref emailId"
+    },
+    {
+        "path":"userIntrested.userId",
+        "select": "firstName lastName profileImage"
+    },
+    {
+        "path":"userIntrested.requestId",
+        "select": "departingAirpoart departingDate arrivingAirpoart arrivingDate"
+    },
+    {
+        "path":"partner.userId",
+        "select": "firstName lastName profileImage"
+    },
+    {
+        "path":"partner.requestId",
+        "select": "departingAirpoart departingDate arrivingAirpoart arrivingDate"
+    }
+]
+}

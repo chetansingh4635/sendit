@@ -1,0 +1,195 @@
+{
+  "hostAddress": "localhost",
+  "serverPort": 9102,
+  "mongoUrl": "mongodb://107.170.22.12:1790/SenditDb",
+  "apiKeys": {
+    "test": "test",
+    "web": "c112f68c22a4b6ff1240e072f64677d155b3d05488bcf5c5194b88aef04ea765",
+    "sparkpost": "033514ccfc60296c23ca371ebf456be0d24fbe36",
+    "discourse":"9cd4568fe3e5725f5e802650173a21a54c79d250ab8becb2615e01929b0b4b72"
+  },
+  "discourseUrl":"http://messages.senditmama.com/",
+  "tokenExpireIn": "15 days",
+  "verificationExpireIn": "7 days",
+  "files": {
+    "maxSizeBytes": 5242880,
+    "mimeTypes": [
+      "image/png",
+      "image/jpeg",
+      "image/jpg"
+    ]
+  },
+  "paymentGateway": {
+    "username": "rishabh.garg-facilitator_api1.daffodilsw.com",
+    "password": "K83XUQLZNHB6EDFH",
+    "signature": "AFcWxV21C7fd0v3bYYYRCpSSRl31A1Mg5-j6GhJgXKDtarz5pCl-1Csj",
+    "responseLang": "en_US",
+    "defaultCurrency": "USD",
+    "delayedChained": "PAY_PRIMARY",
+    "chained": "PAY",
+    "verified": "VERIFIED"
+  },
+
+  "payment":{
+    "defaultRequestPayload":{
+      "isDelayedChained": true,
+      "returnUrl":"",
+      "cancelUrl":"",
+      "receiverList":[]
+    },
+
+    "defaultReciver":{
+      "email":"",
+      "amount":0,
+      "primary": false
+    },
+
+    "primaryReciver":{
+      "email":"pankaj@daffodilsw.com",
+      "amount":0,
+      "primary":true
+    }
+  },
+  "algorithm": "aes-256-ctr",
+  "password": "d6F3Efeq",
+  "cutomerType": "cutomer",
+  "tempFolder": "public/images/temp/",
+  "requestsType":{
+    "travel":1,
+    "shipment":2,
+    "request":3
+  },
+
+  "defaultSparkPostPayload":{
+    "options": {
+      "start_time": "now",
+      "open_tracking": true,
+      "click_tracking": true,
+      "transactional": false,
+      "sandbox": false
+    },
+    "recipients":[],
+    "content": {
+      "template_id": "my-first-email"
+    }
+  },
+
+  "sparkPostTemplates":{
+    "startADiscussion":"start-a-disscussion",
+    "partnershipAccepted":"partnership-accepted",
+    "partnershipRequeted":"partnership-requeted",
+    "paymentAccepted":"payment-accepted",
+    "subscriptionExpired":"subscription-expired",
+    "createIntrest":"create-intrest"
+  },
+
+  "sparkPostRecipent":{
+      "address": {
+        "email":""
+      },
+      "substitution_data": {
+      }
+    },
+    "discourseSuccessCode": 200,
+
+    "paymentStatus":{
+      "created":"CREATED",
+      "complete":"COMPLETED",
+      "incomplete":"INCOMPLETE",
+      "error":"ERROR",
+      "reversalerror":"REVERSALERROR",
+      "processing":"PROCESSING",
+      "pending":"PENDING"
+    },
+
+    "partnershipStatus":{
+      "new":1,
+      "established":2,
+      "packageRecived":3,
+      "deliveryInProgress":4,
+      "deliveryFinished":5,
+      "canceled":6,
+      "completed":7,
+      "rejected":8
+    },
+
+    "activePartnerships":[
+      1,
+      2,
+      3,
+      4
+    ],
+    "updatePartnerShipStatus":[3,4,5],
+
+    "filterConditionUser":{
+        "emailId": "",
+        "firstName":"",
+        "lastName": "",
+        "contactNumber":""
+    },
+
+    "filterConditionRequest":{
+      "departingAirpoart":"",
+      "arrivingAirpoart":""
+    },
+
+    "csvFields": [
+      {
+      "label": "Departing Airpoart",
+      "value": "departingAirpoart",
+      "default": null   
+      },
+      {
+        "value": "departingDate",
+        "label": "Departing Date",
+        "default": null
+      },
+      {
+          "value": "arrivingAirpoart",
+          "label" : "Arriving Airpoart",
+          "default": null
+      },
+      {
+          "value": "arrivingDate",
+          "label": "Arriving Date",
+          "default": null 
+      },
+      {
+          "label": "Request Type",
+          "value": "requestType",
+          "default": null
+      },
+      {
+          "label": "Payment Status",
+          "value": "partner.paymentStatus",
+          "default": null
+      }
+    ],
+
+    "twitterLogin":{
+       "consumer_key": "WalyZZsYQ7oU19cC7gXuyEBnr",
+       "consumer_secret": "d7OZDEg5aeoJmq0s2om2x0dVswnh8bRZaATTk0UFHCUUstH54v"
+    },
+
+    "travellerShare":0.9,
+
+    "defaultPagging":{
+      "limit": 30,
+      "skip": 0
+    },
+
+    "defaultResponceObject":{
+      "statusCode":200
+    },
+    "messageArchetype":"private_message",
+    "api_username":"senditdeveloper",
+    "currency":["AUD","BRL","CAD","CZK","DKK",
+      "EUR","HKD","HUF","ILS","JPY","MYR",
+      "MXN","NOK","NZD","PHP","PLN","GBP",
+      "RUB","SGD","SEK","CHF","TWD","THB",
+      "USD"
+      ],
+    "rejectPartnershipTime":3,
+    "paypalFee":3.4,
+    "paypalFixed":0.35
+}
